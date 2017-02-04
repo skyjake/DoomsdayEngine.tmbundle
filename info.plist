@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>wnnxxb.xrenara@vxv.sv</string>
+	<key>contactName</key>
+	<string>Jaakko Keränen</string>
+	<key>description</key>
+	<string></string>
+	<key>name</key>
+	<string>Doomsday Engine</string>
+	<key>ordering</key>
+	<array>
+		<string>497B09BE-CCD6-4A30-ADE0-F216DBDBD759</string>
+		<string>F66C56DF-B79F-4535-938B-A9F0B68C33A1</string>
+		<string>76CD5CA0-3272-4410-8F84-BDE2386B3A52</string>
+		<string>C994DE24-85DF-4E08-B1EE-256854C3A7C0</string>
+		<string>7F65BAB1-8AD9-40E5-B552-F97B4661CA7C</string>
+		<string>C2964174-F590-4845-B98C-A487516A451B</string>
+		<string>514B58F5-5B75-4662-9030-38949DBD14AE</string>
+		<string>F9A4A68A-3CEB-4B03-B0E0-8E0C0569FC53</string>
+		<string>ADA07E9F-4075-4BCB-9761-F936C7CFBDC9</string>
+		<string>12BC49CD-9BCF-4071-835C-A440DBE54347</string>
+		<string>7BCE57AD-C671-4E5A-940E-B75387EA2AC3</string>
+		<string>4AF6FF26-7971-4CF5-BC66-6FA6352BCFAD</string>
+		<string>B1720A9A-7FE1-466D-BCEB-50026CF8D990</string>
+		<string>91089A31-1AFA-432E-BB0B-481D8851E07F</string>
+		<string>79FCEF6B-7BB0-4009-88E4-2ED59B85312D</string>
+	</array>
+	<key>uuid</key>
+	<string>EEF057E7-02F3-434A-80F5-32E8DE9FDC1D</string>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Amethyst Subsection</string>
+	<key>scope</key>
+	<string>source.amethyst markup.heading.4</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/^/      /</string>
+	</dict>
+	<key>uuid</key>
+	<string>91089A31-1AFA-432E-BB0B-481D8851E07F</string>
+</dict>
+</plist>
