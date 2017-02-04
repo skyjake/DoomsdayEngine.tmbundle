@@ -1923,12 +1923,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>=&gt;</string>
-			<key>name</key>
-			<string>punctuation.separator.key-value</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>&lt;&lt;=|%=|&amp;=|\*=|\*\*=|\+=|\-=|\^=|\|{1,2}=|&lt;&lt;</string>
 			<key>name</key>
 			<string>keyword.operator.assignment.augmented.doomsday</string>
