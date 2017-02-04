@@ -287,7 +287,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([".\w]+)\s*(=)\s*(.*)</string>
+			<string>([@".\w]+)\s*(=)\s*(.*)</string>
 			<key>name</key>
 			<string>meta.definition.singlevalue</string>
 		</dict>
