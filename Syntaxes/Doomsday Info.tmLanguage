@@ -24,7 +24,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?x) (script) \s* ( ([".\w]+) \s+ ([".\w]+) \s* )* ({)</string>
+			<string>(?x) (script) \s* ( ([-@".\w]+) \s+ ([-@".\w]+) \s* )* ({)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -65,6 +65,34 @@
 				<dict>
 					<key>include</key>
 					<string>source.doomsday</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(vertex|fragment)\s*(=)\s*"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.language.doomsdayinfo</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.assign.doomsdayinfo</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>meta.embedded.glsl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.glsl</string>
 				</dict>
 			</array>
 		</dict>
@@ -119,7 +147,7 @@
 		<key>def_list</key>
 		<dict>
 			<key>begin</key>
-			<string>([".\w]+)\s*(&lt;)</string>
+			<string>([-@".\w]+)\s*(&lt;)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -189,7 +217,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([".\w]+)\s*(\$:)(.*)</string>
+			<string>([-@".\w]+)\s*(\$:)(.*)</string>
 			<key>name</key>
 			<string>meta.definition.singleline.scripted.doomsdayinfo</string>
 		</dict>
@@ -224,7 +252,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([".\w]+)\s*(\$=)(.*)(})?</string>
+			<string>([-@".\w]+)\s*(\$=)(.*)(})?</string>
 			<key>name</key>
 			<string>meta.definition.singleline.scriptedexpr.doomsdayinfo</string>
 		</dict>
@@ -249,7 +277,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([".\w]+)\s*(:)(.*)</string>
+			<string>([-@".\w]+)\s*(:)(.*)</string>
 			<key>name</key>
 			<string>meta.definition.singleline</string>
 		</dict>
@@ -281,13 +309,17 @@
 						</dict>
 						<dict>
 							<key>include</key>
+							<string>#line_comment</string>
+						</dict>
+						<dict>
+							<key>include</key>
 							<string>#constants</string>
 						</dict>
 					</array>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([@".\w]+)\s*(=)\s*(.*)</string>
+			<string>([-@".\w]+)\s*(=)\s*(.*)</string>
 			<key>name</key>
 			<string>meta.definition.singlevalue</string>
 		</dict>
@@ -321,7 +353,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?x) ([".\w]+) \s* ({|\()</string>
+					<string>(?x) ([-@".\w]+) \s* ({|\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -362,7 +394,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?x) ([".\w]+ \s+)? ([".\w]+) (\s+ ([".\w]+) \s+ ([".\w]+) )* \s* ({|\()</string>
+					<string>(?x) ([-@".\w]+ \s+)? ([-@".\w]+) (\s+ ([-@".\w]+) \s+ ([-@".\w]+) )* \s* ({|\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -423,7 +455,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?x) ([".\w]+) \s+ ([@".\w]+) \s* ({|\()</string>
+					<string>(?x) ([-@".\w]+) \s+ ([-@".\w]+) \s* ({|\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -497,7 +529,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>[@\w.]+</string>
+					<string>[-@\w.]+</string>
 					<key>name</key>
 					<string>variable.language.doomsdayinfo</string>
 				</dict>
